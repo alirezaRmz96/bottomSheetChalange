@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BottomSheetChalange</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="A_fragment">A fragment</string>
+    <string name="B_fragment">B fragment</string>
+    <string name="open_bottom_sheet">Open Bottom Sheet</string>
 </resources>
