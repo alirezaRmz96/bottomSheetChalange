@@ -33,13 +33,13 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/main_container"
-            android:name="com.example.bottomsheetchalange.AFragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="0dp"
             android:layout_height="350dp"
             app:layout_constraintTop_toBottomOf="@id/b_button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:layout="@layout/fragment_a" />
+            app:navGraph="@navigation/bottom_graph" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
