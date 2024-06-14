@@ -29,7 +29,7 @@ class AFragment : Fragment() {
         binding.apply {
             btnActionB.setOnClickListener {
                 findNavController().navigate(
-                    R.id.BFragment
+                    AFragmentDirections.actionAFragmentToBFragment()
                 )
             }
         }
