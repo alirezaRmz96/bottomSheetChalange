@@ -35,6 +35,7 @@ android {
     buildFeatures {
         //noinspection DataBindingWithoutKapt
         dataBinding = true
+        viewBinding = true
     }
     kotlinOptions {
         jvmTarget = "1.8"
@@ -55,4 +56,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation(libs.play.services.auth.api.phone)
+    //Date picker
+    implementation ("com.github.aliab:Persian-Date-Picker-Dialog:1.8.0")
+    implementation ("com.github.samanzamani:PersianDate:1.5.0")
 }
