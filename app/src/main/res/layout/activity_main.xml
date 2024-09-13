@@ -7,20 +7,56 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/main"
+        android:background="@color/black"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
         <TextView
-            android:id="@+id/bottom_sheet"
-            android:layout_width="wrap_content"
+            android:id="@+id/from_this_date"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
-            android:text="@string/open_bottom_sheet"
+            android:text="@string/from_this_date"
+            android:gravity="center_horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/to_this_date"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:id="@+id/show_from_this_date"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/from_this_date"
+            app:layout_constraintEnd_toEndOf="@id/from_this_date"
+            app:layout_constraintTop_toBottomOf="@id/from_this_date"
+            tools:text="1374/12/12"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/to_this_date"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="@string/to_this_date"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/from_this_date"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/show_to_this_date"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/to_this_date"
+            app:layout_constraintEnd_toEndOf="@id/to_this_date"
+            app:layout_constraintTop_toBottomOf="@id/to_this_date"
+            tools:text="1374/12/12"
+            android:layout_marginTop="8dp"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

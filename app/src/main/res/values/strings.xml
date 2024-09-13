@@ -4,4 +4,7 @@
     <string name="A_fragment">A fragment</string>
     <string name="B_fragment">B fragment</string>
     <string name="open_bottom_sheet">Open Bottom Sheet</string>
+    <string name="from_this_date">from this date</string>
+    <string name="to_this_date">to this date</string>
+    <string name="label_done">Done</string>
 </resources>

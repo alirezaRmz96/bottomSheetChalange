@@ -1,21 +1,15 @@
 package com.example.bottomsheetchalange
 
-import android.annotation.SuppressLint
 import android.content.DialogInterface
 import android.os.Bundle
-import android.util.Log
 import android.view.KeyEvent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.findNavController
 import com.example.bottomsheetchalange.databinding.BottomSheetMainBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 
 class MainFragmentBottomSheet : BottomSheetDialogFragment() {
 
